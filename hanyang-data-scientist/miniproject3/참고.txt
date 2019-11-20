@@ -1,0 +1,29 @@
+http://solarisailab.com/archives/2387 (솔라리스의 인공지능 연구실) 참고
+
+이미지 detection 구글에서 공식적으로 제공하는 Object Detection 라이브러리
+https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/installation.md
+
+
+
+>>> ElasticSearch
+C:\dev_hyu\logstash-6.4.3\conf 경로에 있는
+menimage.conf, womenimage.conf 를 ES랑 키바나를 켠 상태로
+logstash.bat -f ../conf/conf파일 이라고 치면 된다
+
+사전에 키바나에서
+PUT /women_name_url
+{
+  "mappings":{
+    "table":{
+      "properties":{
+        "name":{
+          "type":"text"
+        },
+        "url":{
+          "type":"text"
+        }
+      }
+    }
+  }
+}
+처럼 men_name_url, women_name_url이란 인덱스 틀로 생성한다
